@@ -41,7 +41,7 @@ Unlike CKA and CKAD, for CKS I jump directly to the labs without watching videos
 2. Mock exams: 
 - KodeKloud CKS mock exams: 3 mock exams included in the course. There are some overlapping questions (30-50%), which are important because they appear often in the real exam. Try again until you reach 90% score. Note that KodeKloud does not do partial scoring, unlike the real exam, so you need to complete ALL parts of a question correctly to get the score, or 0 if you get any part wrong. Personally I think if you score >75%, you are ready for the real exam.
 
-- Killer.sh: 2 mock exams provided for free when you purchase the real exam. Harder and longer than the real exam questions, but good to familiarize with the exam environment and scoring. And I actually enjoy doing it, some techniques in the answers are useful (in real world). I scored just 60% and 52%. 
+- Killer.sh: 2 mock exams provided for free when you purchase the real exam. Harder and longer than the real exam, but good to familiarize with the exam environment and scoring. And I actually enjoy doing it, some techniques in the answers are useful (in real world). I scored just 60% and 52%. 
 
 
 I spent 2 weeks to prepare for CKS, immediately after finshing CKA. 1 week for KodeKloud labs, and 1 week for mock exams. 

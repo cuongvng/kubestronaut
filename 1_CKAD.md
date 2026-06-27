@@ -19,7 +19,7 @@ It took me 4 weeks to finish the course.
 
 - KodeKloud mock exams: 2 mocks. Easy if you finished the lightning labs. 
 
-- Killer.sh: 2 sessions but same question set, unlike CKA and CKS. Longer and harder than the real exam, but good to familiarize with the exam environment and scoring.
+- Killer.sh: 2 sessions but same question set, unlike CKA and CKS. Longer and harder than the real exam, but good to familiarize with the exam environment and scoring. I actually enjoy doing it, some techniques in the answers are useful (in real world).
 
 1 week to do and review. CKAD is the easiest among the 3, just **know how to do things**, not *troubleshoot and fix things* like CKA and CKS. 
 
@@ -39,14 +39,16 @@ It took me 4 weeks to finish the course.
 
 
 ```sh
-k run pod <pod-name> --image=<image-name> 
-k create deploy <deploy-name> --image=<image-name>
-k expose deploy <deploy-name> --port=<port> --target-port=<target-port> --name=<service-name> --type=<service-type>
-k expose pod <pod-name> --port=<port> --target-port=<target-port> --name=<service-name> --type=<service-type>
+k -n <namespace> run pod <pod-name> --image=<image-name> 
+k -n <namespace> create deploy <deploy-name> --image=<image-name>
+k -n <namespace> expose deploy <deploy-name> --port=<port> --target-port=<target-port> --name=<service-name> --type=<service-type>
+k -n <namespace> expose pod <pod-name> --port=<port> --target-port=<target-port> --name=<service-name> --type=<service-type>
 ```
 
 Some configurations cannot be set by imperative commands. In such cases, use **`dry-run=client -o yaml > file-name.yaml`** to generate the manifest file, then edit it with `vim`. 
 
+
+Best to use `-n <namespace>` immediately after `kubectl`. Many errors come from wrong namespace. 
 
 6. Some `vim` tips:
 
