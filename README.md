@@ -12,7 +12,9 @@ Background: I am a 5+ yoe ML Engineer, no prior experience with Kubernetes befor
 4. [KCNA & KCSA](4_KCNA_KCSA.md)
 
 
-This is the order I took the certs.
+This is the order I took the certs. Below is my time distribution for these certs during the period:
+
+![](time.png)
 
 
 
