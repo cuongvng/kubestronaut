@@ -3,6 +3,8 @@
 Mình vừa hoàn thành 5 chứng chỉ Kubernetes: CKA, CKAD, CKS, KCNA và KCSA để trở thành một Kubestronaut. Bài viết này tổng hợp lại những kinh nghiệm của mình trong quá trình chuẩn bị cho các chứng chỉ này. Hy vọng sẽ hữu ích cho các bạn. 
 ![](badge.png)
 
+
+
 Background mình bên AI/ML, trước khi bắt đầu chưa có kinh nghiệm với Kubernetes, nhưng nền tảng về phần mềm, OS, Networking, System Design, Cloud (AWS) rất vững. Nền tảng này giúp mình học nhanh hơn, và với các bạn đã có kinh nghiệm với Kubernetes thì mình nghĩ có thể nhanh hơn nữa. 
 
 
@@ -16,23 +18,24 @@ Tài liệu học duy nhất là các khoá học của KodeKloud. Dưới đây
 
 
 
-## 2. CKAD
+## 1. CKAD
 
 
-### 2.1. Khoá học
+### 1.1. Khoá học
 
 Mình học khóa CKAD của KodeKloud trên Udemy. Video bài giảng và đặc biệt lab thực hành rất hữu ích. Nếu bạn chưa có kinh nghiệm Kubernetes trước đó, mình khuyên nên xem video trước rồi làm lab. Nếu đã có kinh nghiệm, bạn có thể vào lab luôn, sau đó có thể xem lại video nếu cần để củng cố kiến thức.
 
 Lightning Labs: có 2 bài lab lớn yêu cầu thiết lập các thành phần đã học để xây dựng một hệ thống nhỏ. Dài hơn nhiều so với một câu trong kỳ thi thật, nhưng rất đáng làm.
 
 
-### 2.2. Mock exam
+
+### 1.2. Mock exam
 
 - 2 đề của KodeKloud (trong khoá học): rất dễ nếu bạn đã hoàn thành Lightning Labs.
 
 - Killer.sh: có 2 session được cung cấp khi đăng ký thi, tuy nhiên với CKAD thì 2 session này có cùng bộ câu hỏi. Dài và khó hơn thi thật, nhưng giúp làm quen với môi trường thi và cách chấm điểm. Mình cũng khá enjoy làm Killer.sh, một số kỹ thuật với shell scripting trong đáp án cũng khá hữu ích.
 
-### 2.3. Tips
+### 1.3. Tips
 
 Ngoài các [chia sẻ của bạn Khánh Linh](https://devops.vn/posts/chia-se-tai-lieu-va-qua-trinh-on-tap-thi-ckad/), mình bổ sung thêm như sau:
 
@@ -61,12 +64,12 @@ Mình mất khoảng 5 tuần để hoàn thành CKAD, 4 tuần cho khoá học/
 
 
 
-## 3. CKA
+## 2. CKA
 
 Sau khi thi xong CKAD, có đợt khuyến mại MegaMay. Mình quyết định mua bundle CKA + CKS, và bắt đầu ngay lập tức.
 
 
-### 3.1. Khoá học
+### 2.1. Khoá học
 
 Mình học khóa CKA của KodeKloud trên Udemy.
 Khoảng 60% nội dung trùng với CKAD. Ngoài ra còn có:
@@ -83,7 +86,7 @@ Nên dành thời gian tự thiết lập một cluster nhỏ với `kubeadm`. M
 
 
 
-### 3.2. Mock exam
+### 2.2. Mock exam
 
 
 - KodeKloud: 3 đề. Độ khó tương đương kỳ thi thật.
@@ -92,7 +95,7 @@ Nên dành thời gian tự thiết lập một cluster nhỏ với `kubeadm`. M
 
 
 
-### 3.3. Tips
+### 2.3. Tips
 
 
 Ngoài các [chia sẻ của bạn Phi Hùng](https://devops.vn/posts/chinh-phuc-chung-chi-cka-certified-kubernetes-administrator/), mình bổ sung thêm như sau:
@@ -123,7 +126,7 @@ Mất tổng cộng gần 4 tuần hoàn thành CKA, 2 tuần cho khoá học/la
 
 
 
-## 4. CKS
+## 3. CKS
 
 Tập trung vào bảo mật K8s, yêu cầu có CKA trước khi thi. Nội dung bao gồm:
 
@@ -160,7 +163,7 @@ Tập trung vào bảo mật K8s, yêu cầu có CKA trước khi thi. Nội dun
 
 
 
-### 4.1. Khoá học
+### 3.1. Khoá học
 
 Mình học khóa CKS của KodeKloud, không có trên Udemy, nên mình subscribe trực tiếp trên nền tảng KodeKloud, gói Standard, 29 USD/tháng. Đặt mục tiêu hoàn thành trong 1 tháng để tiết kiệm chi phí, cũng là một động lực tốt.
 
@@ -169,7 +172,7 @@ Mình thử đổi cách học với CKS, nhảy thẳng vào làm lab mà khôn
 
 
 
-### 4.2. Mock exam
+### 3.2. Mock exam
 
 Như thường lệ, mình chỉ dùng 2 nguồn:
 
@@ -183,7 +186,7 @@ Mình mất 2 tuần cho CKS, ngay sau khi hoàn thành CKA. 1 tuần cho course
 
 
 
-### 4.3. Tips
+### 3.3. Tips
 
 Ngoài các tips cho CKA như dùng 2 terminal, chọn câu hỏi hợp lý, backup static pod YAML, v.v., mình bổ sung thêm cho CKS như sau:
 
@@ -243,7 +246,7 @@ Nên nhớ cách điều hướng tới đó trong bài thi: Falco docs -> Refer
 - Tương tự, với Cilium network policy, trang hữu ích là Overview of Network Policy. Nhấn vào link Layer3/4 để tìm manifest mẫu tùy theo yêu cầu của câu hỏi.
 
 
-## 5. KCNA & KCSA
+## 4. KCNA & KCSA
 
 
 Đây là hai chứng chỉ lý thuyết về Kubernetes và hệ sinh thái của nó. Hình thức thi là câu hỏi trắc nghiệm. Câu hỏi và câu trả lời ngắn gọn, súc tích, không có cách diễn đạt đánh đố.
@@ -255,7 +258,7 @@ Từ [chia sẻ của anh Vũ Công Thạo](https://devops.vn/posts/lam-the-nao-
 
 
 
-## 6. Chi phí
+## 5. Chi phí
 
 - Chi phí cho các khoá học trên KodeKloud và Udemy của mình tổng khoảng 70 USD. Với Udemy thì cố gắng tìm mã giảm giá để tiết kiệm. 
 
@@ -268,7 +271,7 @@ Từ [chia sẻ của anh Vũ Công Thạo](https://devops.vn/posts/lam-the-nao-
 Tổng cộng chi phí thi chỉ còn 785 USD! Mình xin cảm ơn DevOps VietNam đã tạo điều kiện thông qua các ưu đãi, để chi phí không còn là rào cản quá lớn cho anh chị em kỹ sư VN.
 
 
-## 7. Tổng kết
+## 6. Tổng kết
 
 Trên đây mình đã tổng hợp lại trải nghiệm của bản thân trong quá trình đạt danh hiệu Kubestronaut. Hy vọng sẽ hữu ích cho các bạn đang có ý định chinh phục các chứng chỉ này. Chúc các bạn thành công!
 
